@@ -6,7 +6,6 @@ body {
   color: #fff !important;
 }
 
-
 .banner {
   background-image: url("./img/banner.jpg");
   width: 100%;
@@ -43,7 +42,44 @@ body {
 .flex {
   display: flex;
 }
+.brand:hover {
+  cursor:pointer;
+}
+.selected-btn {
+border: 1px solid gold;
+border-radius: 5;
+padding: 5px;
+padding-left: 20px;
+padding-right: 20px;
+cursor: pointer;
+background-color: #212529;
+color: #fff;
+border-radius: 5px;
+}
+.bg-gold {
+  background-color: gold;
+  font-weight: 600;
+  color: #212529;
+}
+.brand:link {
+  text-decoration: none;
+}
 
+.desc-detail {
+  margin-left: 80px;
+}
+.desc-title {
+  font-size: 18px;
+}
+.coin-logo {
+  margin-top: 150px;
+  margin-left: 15%;
+}
+
+.sidebar {
+  margin-right: 25px;
+  width: 25%;
+}
 .table tbody:hover {
   cursor: pointer;
 }
@@ -77,4 +113,58 @@ body {
 .coin-rev {
   margin-left: 20px;
   margin-top: 10px;
+}
+@media only screen and (max-width: 700px) {
+  .brand {
+    font-size: 18px;
+  }
+  select {
+    padding-right: 10px;
+  }
+  .title {
+    font-size: 2rem;
+    padding-top: 100px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .market-cap {
+    font-size: 1.2rem;
+  }
+    .table thead th {
+      padding: 10px;
+    }
+    .img-symb {
+      width: 30px;
+      height: 30px;
+      margin-left: -7px;
+    }
+    .coin-detail {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .coin-logo {
+      width: 100px;
+      height: 100px;
+      margin-top: 80px;
+      margin-left:0;
+    }
+    .desc-detail {
+      margin-top: 80px;
+      margin-left: 5%;
+    }
+    h5 {
+      font-size:16px;
+    }
+    .sidebar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .selected-btn {
+      padding: 5px;
+    }
+
 }
