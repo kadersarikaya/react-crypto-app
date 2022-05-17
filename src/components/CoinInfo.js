@@ -32,7 +32,12 @@ const CoinInfo = ({coin}) => {
     <div className="container">
       {!historicData | (flag === false) ? (
         <div className="crypto-list">
-          <Spinner style={{marginTop:"50px"}} size="lg" animation="border" variant="warning" />
+          <Spinner
+            style={{ marginTop: "50px" }}
+            size="lg"
+            animation="border"
+            variant="warning"
+          />
         </div>
       ) : (
         <>
@@ -51,7 +56,7 @@ const CoinInfo = ({coin}) => {
                 {
                   data: historicData.map((coin) => coin[1]),
                   label: `Price ( Past ${days} Days ) in ${currency}`,
-                  borderColor: "#EEBC1D",
+                  borderColor: "#F99606",
                 },
               ],
             }}
