@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const { currency, setCurrency } = CryptoState();
   return (
-    <>
+    <div className='header'>
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
       <Link to="/" style={{ textDecoration: 'none' }} >
@@ -21,7 +21,7 @@ const Header = () => {
       </select>
       </Container>
     </Navbar>
-    </>
+    </div>
   )
 }
 

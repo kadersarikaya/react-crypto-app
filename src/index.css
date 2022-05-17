@@ -75,6 +75,9 @@ border-radius: 5px;
   margin-top: 150px;
   margin-left: 15%;
 }
+.header {
+  margin-bottom: 60px;
+}
 
 .sidebar {
   margin-right: 25px;
@@ -162,6 +165,7 @@ border-radius: 5px;
       align-items: center;
       justify-content: center;
       margin-top: 20px;
+      margin-bottom: 30px;
     }
     .selected-btn {
       padding: 5px;
